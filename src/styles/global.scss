@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blueDark: #191d32;
+    --blue: #282f44;
+    --liver: #453a49;
+    --red: #6d3b47;
+    --pink: #ba2c73;
+}
+
+html {
+    @media (max-width: 1080px) {
+        font-size: 93.75%;
+    }
+    @media (max-width: 720px) {
+        font-size: 87.5%;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialised;
+    background-color: #191d32;
+}
+
+html,
+body,
+#root,
+#app {
+    width: 100%;
+    height: 100%;
+}
+#app {
+    overflow-x: hidden;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 600;
+}
+
+button {
+    cursor: pointer;
+}
+
+[disable] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

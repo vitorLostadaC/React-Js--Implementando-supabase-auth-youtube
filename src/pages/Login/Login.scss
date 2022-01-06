@@ -1,0 +1,105 @@
+#login-page {
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #authenticated {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        h2 {
+            color: var(--pink);
+            font-size: 2rem;
+        }
+        p {
+            color: #fff;
+        }
+        button {
+            background-color: var(--pink);
+            border: 0;
+            padding: 8px 20px;
+            color: #fff;
+            font-size: 1.3rem;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                filter: brightness(0.8);
+            }
+        }
+    }
+
+    form {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        // background-color: red;
+        padding: 20px 10px;
+        width: 500px;
+        overflow: hidden;
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        label {
+            text-align: left;
+            width: 400px;
+            font-weight: 600;
+        }
+
+        input {
+            padding: 10px;
+            width: 400px;
+        }
+
+        button {
+            padding: 10px 30px;
+            border: none;
+            background-color: var(--pink);
+            font-weight: 600;
+            color: #fff;
+            transition: all 0.2s ease-in-out;
+            border-radius: 5px;
+
+            &:hover {
+                filter: brightness(0.7);
+            }
+        }
+
+        p {
+            width: 400px;
+            font-size: 0.8rem;
+
+            a {
+                font-weight: 700;
+                color: var(--pink);
+                cursor: pointer;
+            }
+        }
+
+        .space-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .row-direction {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+            }
+        }
+    }
+}
